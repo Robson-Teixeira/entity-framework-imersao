@@ -11,8 +11,8 @@ namespace P2.DataContext
             : base("MyConnectionString")
         {
             Database.SetInitializer(new DropCreateDatabaseAlways<MyDataContext>());
-            //Configuration.LazyLoadingEnabled = false;
-            //Configuration.ProxyCreationEnabled = false;
+            //Configuration.LazyLoadingEnabled = false; /*carregamento lento*/
+            //Configuration.ProxyCreationEnabled = false; /*criação instância classe proxy*/
         }
 
         #region DbSets
