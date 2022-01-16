@@ -13,7 +13,7 @@ namespace P2.Mappings
             HasKey(x => x.Id);
 
             Property(x => x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            //Property(x => x.Id).HasColumnName("Id");
+            //Property(x => x.Id).HasColumnName("Id"); /*mapeamento propriedade > campo*/
 
             Property(x => x.Name)
                 .IsRequired()
